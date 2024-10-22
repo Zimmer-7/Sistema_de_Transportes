@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gt3zi\\OneDrive\\Área de Trabalho\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj": {}
+    "C:\\Users\\leandro\\Documents\\GitHub\\Sistema_de_Transportes\\ConsoleApp\\ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gt3zi\\OneDrive\\Área de Trabalho\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj": {
+    "C:\\Users\\leandro\\Documents\\GitHub\\Sistema_de_Transportes\\ConsoleApp\\ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gt3zi\\OneDrive\\Área de Trabalho\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\leandro\\Documents\\GitHub\\Sistema_de_Transportes\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Users\\gt3zi\\OneDrive\\Área de Trabalho\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\gt3zi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gt3zi\\OneDrive\\Área de Trabalho\\ConsoleApp\\ConsoleApp\\obj\\",
+        "projectPath": "C:\\Users\\leandro\\Documents\\GitHub\\Sistema_de_Transportes\\ConsoleApp\\ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leandro\\Documents\\GitHub\\Sistema_de_Transportes\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gt3zi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
