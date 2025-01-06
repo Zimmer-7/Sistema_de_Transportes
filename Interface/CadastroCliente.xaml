@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interface.CadastroCliente"
+             Title="CadastroCliente">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+
+            <Label Text="Nome"/>
+
+            <Entry 
+                x:Name="NomeEntry" 
+                Placeholder="Nome do cliente"
+                />
+
+            <Label Text="Email"/>
+
+            <Entry 
+                x:Name="EmailEntry" 
+                Placeholder="Email do cliente"
+                />
+
+            <Label Text="Telefone"/>
+
+            <Entry 
+                x:Name="TelefoneEntry" 
+                Placeholder="Telefone do cliente"
+                />
+
+            <Button
+                x:Name="CadastrarClienteBtn"
+                Text="Cadastrar" 
+                Clicked="OnCadastrarClienteBtnClicked"
+                />
+
+            <Label x:Name="resultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interface.CadastroCidade"
+             Title="CadastroCidade">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+
+            <Label Text="Nome"/>
+
+            <Entry 
+                x:Name="CidadeNomeEntry" 
+                Placeholder="Nome da cidade"
+                />
+
+            <Label Text="Cep"/>
+
+            <Entry 
+                x:Name="CidadeCepEntry" 
+                Placeholder="00000-000"
+                />
+
+            <Button
+                x:Name="CidadeBtn"
+                Text="Cadastrar" 
+                Clicked="OnCidadeBtnClicked"
+                />
+
+            <Label x:Name="resultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

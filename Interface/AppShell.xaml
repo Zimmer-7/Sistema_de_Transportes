@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Interface.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Interface"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Interface">
+
+    <TabBar>
+
+        <ShellContent
+            Title="Login Usuario"
+            ContentTemplate="{DataTemplate local:LoginPage}"
+            Route="LoginPage" />
+
+        <ShellContent
+            Title="Cadastro de Clientes"
+            ContentTemplate="{DataTemplate local:CadastroCliente}"
+            Route="CadastroCliente" />
+
+        <ShellContent
+            Title="Cadastro de Cidades"
+            ContentTemplate="{DataTemplate local:CadastroCidade}"
+            Route="CadastroCidade" />
+
+        <ShellContent
+            Title="Main Page"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </TabBar>
+
+</Shell>
