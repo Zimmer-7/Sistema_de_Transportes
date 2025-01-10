@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interface.CadastroVeiculo"
+             Title="CadastroVeiculo">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+
+            <Label Text="Placa"/>
+
+            <Entry 
+                x:Name="PlacaEntry" 
+                Placeholder="ABC1234"
+                />
+
+            <Label Text="Modelo"/>
+
+            <Entry 
+                x:Name="ModeloEntry" 
+                Placeholder="Modelo do veiculo"
+                />
+
+            <Button
+                x:Name="CadastrarVeiculoBtn"
+                Text="Cadastrar" 
+                Clicked="OnCadastrarVeiculoBtnClicked"
+                />
+
+            <Label x:Name="resultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

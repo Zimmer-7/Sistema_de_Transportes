@@ -1,5 +1,7 @@
 namespace Interface;
 
+using Modelos;
+
 public partial class CadastroViagem : ContentPage
 {
 	public CadastroViagem()
@@ -9,12 +11,12 @@ public partial class CadastroViagem : ContentPage
 
 	private void OnCadastrarViagemBtnClicked(object sender, EventArgs e)
     {
-        Viagem viagem = new Viagem(PartidaEntry.Text, ValorEntry.Text);
+        //Viagem viagem = new Viagem(PartidaEntry, ValorEntry.Text);
 
-        resultado.Text = viagem.ToString();
+        //resultado.Text = viagem.ToString();
         try{
 
-            DisplayAlert("Cadastro concluído!",$"Viagem {viagem.Nome} cadastrada com sucesso! seja bem-vindo!" , "OK");
+            DisplayAlert("Cadastro concluído!",$"Viagem cadastrada com sucesso! seja bem-vindo!" , "OK");
         }catch (Exception ex)
         {
             DisplayAlert ("Erro",ex.Message, "Fechar");

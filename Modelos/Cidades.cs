@@ -1,42 +1,41 @@
-namespace Modelos.Cidades
+namespace Modelos;
+
+public class Cidade
 {
-    public class Cidade
+    //public Cidade() {}
+
+    public Cidade(string nome, string estado, string pais)
     {
-        public Cidade() {}
+        Nome = nome;
+        Estado = estado;
+        Pais = pais;
+    }
 
-        public Cidade(string nome, string estado, string pais)
+    public int? IdCidade { get; set; }
+    public string Nome { get; set; }
+    public string Estado { get; set; }
+    public string Pais { get; set; }
+
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
         {
-            Nome = nome;
-            Estado = estado;
-            Pais = pais;
+            return false;
         }
 
-        public int? IdCidade { get; set; }
-        public string Nome { get; set; }
-        public string Estado { get; set; }
-        public string Pais { get; set; }
+        var other = (Cidade)obj;
 
-        public override bool Equals(object obj)
-        {
-            if (obj == null || GetType() != obj.GetType())
-            {
-                return false;
-            }
+        return base.Equals(IdCidade.HasValue && other.IdCidade.HasValue
+                            && IdCidade == other.IdCidade);
+    }
 
-            var other = (Cidade)obj;
+    public override int GetHashCode()
+    {
+        return IdCidade.HasValue ? IdCidade.GetHashCode() : 0;
+    }
 
-            return base.Equals(IdCidade.HasValue && other.IdCidade.HasValue
-                                && IdCidade == other.IdCidade);
-        }
-
-        public override int GetHashCode()
-        {
-            return IdCidade.HasValue ? IdCidade.GetHashCode() : 0;
-        }
-
-        public override string ToString()
-        {
-            return $"[{IdCidade}, {Nome}, {Estado}, {Pais}]";
-        }
+    public override string ToString()
+    {
+        return $"[{IdCidade}, {Nome}, {Estado}, {Pais}]";
     }
 }

@@ -1,40 +1,38 @@
-namespace Modelos.Login
+namespace Modelos;
+public class Login
 {
-    public class Login
+    public Login() {}
+
+    public Login(string email, string senha)
     {
-        public Login() {}
+        Email = email;
+        Senha = senha;
+    }
 
-        public Login(string email, string senha)
+    public int? IdLogin { get; set; }
+    public string Email { get; set; }
+    public string Senha { get; set; }
+
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
         {
-            Email = email;
-            Senha = senha;
+            return false;
         }
 
-        public int? IdLogin { get; set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
+        var other = (Login)obj;
 
-        public override bool Equals(object obj)
-        {
-            if (obj == null || GetType() != obj.GetType())
-            {
-                return false;
-            }
+        return base.Equals(IdLogin.HasValue && other.IdLogin.HasValue
+                            && IdLogin == other.IdLogin);
+    }
 
-            var other = (Login)obj;
+    public override int GetHashCode()
+    {
+        return IdLogin.HasValue ? IdLogin.GetHashCode() : 0;
+    }
 
-            return base.Equals(IdLogin.HasValue && other.IdLogin.HasValue
-                                && IdLogin == other.IdLogin);
-        }
-
-        public override int GetHashCode()
-        {
-            return IdLogin.HasValue ? IdLogin.GetHashCode() : 0;
-        }
-
-        public override string ToString()
-        {
-            return $"[{IdLogin}, {Email}]";
-        }
+    public override string ToString()
+    {
+        return $"[{IdLogin}, {Email}]";
     }
 }

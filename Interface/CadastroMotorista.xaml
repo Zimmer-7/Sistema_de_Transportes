@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interface.CadastroMotorista"
+             Title="CadastroMotorista">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+
+            <Label Text="Nome"/>
+
+            <Entry 
+                x:Name="NomeEntry" 
+                Placeholder="Nome do motorista"
+                />
+
+            <Label Text="CPF"/>
+            
+            <Entry 
+                x:Name="CpfEntry" 
+                Placeholder="000.000.000-00"
+                />
+
+            <Label Text="CNH"/>
+            
+            <Entry 
+                x:Name="CnhEntry" 
+                Placeholder="numero da CNH"
+                />
+
+            <Button
+                x:Name="CadastrarMotoristaBtn"
+                Text="Cadastrar" 
+                Clicked="OnCadastrarMotoristaBtnClicked"
+                />
+
+            <Label x:Name="resultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

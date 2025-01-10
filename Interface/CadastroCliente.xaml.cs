@@ -11,7 +11,7 @@ public partial class CadastroCliente : ContentPage
 
 	private void OnCadastrarClienteBtnClicked(object sender, EventArgs e)
     {
-        Cliente cliente = new Cliente(NomeEntry.Text, EmailEntry.Text, TelefoneEntry.Text, CpfEntry.Text);
+        Cliente cliente = new(NomeEntry.Text, EmailEntry.Text, TelefoneEntry.Text, CpfEntry.Text);
 
         // cliente.IdCliente = 1;  
         //cliente.Nome = NomeEntry.Text;
