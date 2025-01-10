@@ -1,14 +1,20 @@
-using Modelos.Motoristas;
-using Modelos.Veiculos;
-using Modelos.Passageiros;
+using Modelos.Motorista;
+using Modelos.Veiculo;
+using Modelos.Passageiro;
 
 namespace TransportManager.Model.Viagens
 {
     public class Viagem
     {
+
+        public Viagem(DateTime datahorapartida, decimal valor){
+            DataHoraPartida = datahorapartida;
+            Valor = valor;
+        }
+
         public int Id { get; set; }
-        public Motorista Motorista { get; set; }
-        public Veiculo Veiculo { get; set; }
+        public Motorista? Motorista { get; set; }
+        public Veiculo? Veiculo { get; set; }
         public DateTime DataHoraPartida { get; set; }
         public DateTime? DataHoraChegada { get; set; }
         public StatusViagem Status { get; set; }
@@ -23,4 +29,5 @@ namespace TransportManager.Model.Viagens
         Concluida,
         Cancelada
     }
+
 }

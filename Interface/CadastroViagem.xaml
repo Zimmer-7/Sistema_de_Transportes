@@ -3,11 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Interface.CadastroViagem"
              Title="CadastroViagem">
-    <VerticalStackLayout>
-        <Label 
-            Text="Cadastro viagem!!!"
-            Text="Não sei como vai funcionar"
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+
+            <Label 
+            Text="Cadastro viagem!!!
+                Não sei como vai funcionar"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+            <Label Text="Partida"/>
+
+            <Entry 
+                x:Name="PartidaEntry" 
+                Placeholder="00/00/0000"
+                />
+
+            <Label Text="Valor"/>
+
+            <Entry 
+                x:Name="ValorEntry" 
+                Placeholder="valor da viagem"
+                />
+
+            <Button
+                x:Name="CadastrarViagemBtn"
+                Text="Cadastrar" 
+                Clicked="OnCadastrarViagemBtnClicked"
+                />
+
+            <Label x:Name="resultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

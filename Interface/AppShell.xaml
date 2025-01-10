@@ -20,11 +20,6 @@
             Route="CadastroCliente" />
 
         <ShellContent
-            Title="Cadastro de Cidades"
-            ContentTemplate="{DataTemplate local:CadastroCidade}"
-            Route="CadastroCidade" />
-
-        <ShellContent
             Title="Cadastro Viagem"
             ContentTemplate="{DataTemplate local:CadastroViagem}"
             Route="CadastroViagem" />

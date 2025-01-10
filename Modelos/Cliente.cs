@@ -1,8 +1,8 @@
-namespace Modelos.Cliente
+namespace Modelos.Cliente;
 
 public class Cliente
 {
-    public Cliente() {}
+    //public Cliente() {}
     public Cliente(string nome, string email, string telefone, string cpf)
     {
         Nome = nome;
