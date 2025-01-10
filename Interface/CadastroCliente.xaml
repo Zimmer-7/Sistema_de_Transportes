@@ -29,6 +29,13 @@
                 Placeholder="Telefone do cliente"
                 />
 
+            <Label Text="CPF"/>
+            
+            <Entry 
+                x:Name="CpfEntry" 
+                Placeholder="000.000.000-00"
+                />
+
             <Button
                 x:Name="CadastrarClienteBtn"
                 Text="Cadastrar" 

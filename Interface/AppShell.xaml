@@ -25,9 +25,15 @@
             Route="CadastroCidade" />
 
         <ShellContent
+            Title="Cadastro Viagem"
+            ContentTemplate="{DataTemplate local:CadastroViagem}"
+            Route="CadastroViagem" />
+
+        <ShellContent
             Title="Main Page"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
+
     </TabBar>
 
 </Shell>
