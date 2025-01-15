@@ -35,6 +35,11 @@
             Route="CadastroViagem" />
 
         <ShellContent
+            Title="Cadastro Passageiros"
+            ContentTemplate="{DataTemplate local:CadastroPassageiros}"
+            Route="CadastroPassageiros" />
+
+        <ShellContent
             Title="Main Page"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
